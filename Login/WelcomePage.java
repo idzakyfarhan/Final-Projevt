@@ -32,6 +32,8 @@ public class WelcomePage extends Component implements ActionListener {
         frame.setLayout(null);
         frame.setVisible(true);
         frame.add(playButton);
+        frame.setLocationRelativeTo(null);
+
 
 //        PongGame pongGame = new PongGame();
 
