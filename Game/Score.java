@@ -3,7 +3,7 @@ package Game;
 import java.awt.*;
 
 
-public class Score extends Rectangle{
+public class Score<T> extends Rectangle {
 
     static int GAME_WIDTH;
     static int GAME_HEIGHT;

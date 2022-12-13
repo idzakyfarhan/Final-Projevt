@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class Paddle extends Rectangle{
+class Paddle extends Rectangle{ //inheritance
 
     int id;
     int yVelocity;
@@ -69,7 +69,7 @@ public class Paddle extends Rectangle{
 
     }
 
-    public void setYdirection(int ydirection){
+    public void setYdirection(int ydirection){ //encapsulation
         yVelocity = ydirection;
 
     }

@@ -34,22 +34,15 @@ public class WelcomePage extends Component implements ActionListener {
         frame.add(playButton);
         frame.setLocationRelativeTo(null);
 
-
-//        PongGame pongGame = new PongGame();
-
     }
 
-
+/*overriding*/
     @Override
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()==playButton) {
             PongGame pongGame = new PongGame();
         }
-
-
-
-
 
     }
 }
