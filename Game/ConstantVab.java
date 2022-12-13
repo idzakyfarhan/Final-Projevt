@@ -2,7 +2,7 @@ package Game;
 
 import java.awt.*;
 
-public interface ConstantVab {
+public interface ConstantVab { //interface
     static final double half = 0.5555;
     static final int GAME_WIDTH= 1000;
     static final int GAME_HEIGHT= (int)(GAME_WIDTH * ((float)half)); /* using casting conversion by converting double to float */

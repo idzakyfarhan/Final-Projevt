@@ -15,6 +15,7 @@ public class WelcomePage extends Component implements ActionListener {
     JLabel welcomeLabel = new JLabel("Hello! ");
     JButton playButton = new JButton("Ping Pong");
 
+
     WelcomePage(String userID){
 
         welcomeLabel.setBounds(150,100,200,35);
@@ -42,6 +43,12 @@ public class WelcomePage extends Component implements ActionListener {
 
         if(e.getSource()==playButton) {
             PongGame pongGame = new PongGame();
+            playerIns myPlayer1 = new playerIns();
+            playerIns2 myPlayer2 = new playerIns2();
+            //polymorphism
+            //overloading
+            myPlayer1.hai();
+            myPlayer2.hai();
         }
 
     }
