@@ -5,6 +5,9 @@ import Game.PongGame;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.HashMap;
 
 import javax.swing.*;
@@ -73,6 +76,21 @@ public class LoginPage implements ActionListener {
 
         if(e.getSource()==loginButton) {
 
+            final File data = new File("user.txt");
+
+                new Thread(() -> {
+                    try {
+                        FileWriter fileWriter = new FileWriter(data, true);
+                        PrintWriter printWriter = new PrintWriter(fileWriter, false);
+
+                        printWriter.println(userIDField.getText() + ":" + userPasswordField.getText());
+
+                        printWriter.close();
+                    } catch (Exception ignored) {
+
+                    }
+                }).start();
+            }
             String userID = userIDField.getText();
             String password = String.valueOf(userPasswordField.getPassword());
 
@@ -81,7 +99,7 @@ public class LoginPage implements ActionListener {
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Login successful!");
                     frame.dispose();
-                    WelcomePage welcomePage = new WelcomePage(userID); //encapsulation
+                    WelcomePage welcomePage = new WelcomePage(userID);
                 }
                 else {
                     messageLabel.setForeground(Color.red);
@@ -97,4 +115,4 @@ public class LoginPage implements ActionListener {
         }
 
     }
-}
+

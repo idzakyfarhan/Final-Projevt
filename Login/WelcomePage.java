@@ -14,18 +14,27 @@ public class WelcomePage extends Component implements ActionListener {
 
     JLabel welcomeLabel = new JLabel("Hello! ");
     JButton playButton = new JButton("Ping Pong");
+    JButton historyButton = new JButton("User ID and Pass");
+    JLabel historyLabel = new JLabel();
+    JTextArea userHistory = new JTextArea();
+
 
 
     WelcomePage(String userID){
 
-        welcomeLabel.setBounds(150,100,200,35);
+        welcomeLabel.setBounds(140,100,200,35);
         welcomeLabel.setFont(new Font(null,Font.PLAIN,25));
-        welcomeLabel.setText("Hello " + userID);
+        welcomeLabel.setText("Hello " + userID + "!");
 
         playButton.setBounds(150,150,100,25);
         playButton.setFocusable(true);
         playButton.setVisible(true);
         playButton.addActionListener(this);
+
+        historyButton.setBounds(130,200,150,25);
+        historyButton.setFocusable(true);
+        historyButton.setVisible(true);
+        historyButton.addActionListener(this);
 
         frame.add(welcomeLabel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,6 +42,7 @@ public class WelcomePage extends Component implements ActionListener {
         frame.setLayout(null);
         frame.setVisible(true);
         frame.add(playButton);
+        frame.add(historyButton);
         frame.setLocationRelativeTo(null);
 
     }
@@ -50,6 +60,12 @@ public class WelcomePage extends Component implements ActionListener {
             myPlayer1.hai();
             myPlayer2.hai();
         }
+
+        if(e.getSource()==historyButton) {
+            History history1 = new History();
+
+        }
+
 
     }
 }

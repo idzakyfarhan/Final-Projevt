@@ -17,4 +17,4 @@ In this project i will make Pong game with login page and menu
 12. Abstract Class ✓
 13. Generics ✓
 14. Collection ✓
-15. Input Output
+15. Input Output ✓

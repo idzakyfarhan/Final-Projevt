@@ -23,6 +23,7 @@ public class IDandPassword<T> {
         logininfo.put(nama[0],"312");
         logininfo.put("Jeje","213");
         logininfo.put("Eric","123");
+        logininfo.put("kayla","ugly");
         logininfo.put(setName("Arya"),"123"); //encapsulation
 
 
