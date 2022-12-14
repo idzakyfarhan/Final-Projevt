@@ -20,5 +20,5 @@ In this project i will make Pong game with login page and menu
 15. Input Output ✓ History Class
 
 References
-https://www.youtube.com/watch?v=Hiv3gwJC5kw&t=12s (loginPage)
-https://www.youtube.com/watch?v=oLirZqJFKPE&t=1199s (ponggame)
+1. https://www.youtube.com/watch?v=Hiv3gwJC5kw&t=12s (loginPage)
+2. https://www.youtube.com/watch?v=oLirZqJFKPE&t=1199s (ponggame)
