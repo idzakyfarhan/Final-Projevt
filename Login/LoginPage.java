@@ -1,7 +1,5 @@
 package Login;
 
-import Game.PongGame;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -99,7 +97,7 @@ public class LoginPage implements ActionListener {
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Login successful!");
                     frame.dispose();
-                    WelcomePage welcomePage = new WelcomePage(userID);
+                    Menu welcomePage = new Menu(userID);
                 }
                 else {
                     messageLabel.setForeground(Color.red);

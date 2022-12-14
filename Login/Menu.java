@@ -1,6 +1,5 @@
 package Login;
 
-import Game.GameFrame;
 import Game.PongGame;
 
 import javax.swing.*;
@@ -8,7 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class WelcomePage extends Component implements ActionListener {
+public class Menu extends Component implements ActionListener {
 
     JFrame frame = new JFrame();
 
@@ -20,7 +19,7 @@ public class WelcomePage extends Component implements ActionListener {
 
 
 
-    WelcomePage(String userID){
+    Menu(String userID){
 
         welcomeLabel.setBounds(140,100,200,35);
         welcomeLabel.setFont(new Font(null,Font.PLAIN,25));
@@ -56,9 +55,8 @@ public class WelcomePage extends Component implements ActionListener {
             playerIns myPlayer1 = new playerIns();
             playerIns2 myPlayer2 = new playerIns2();
             //polymorphism
-            //overloading
-            myPlayer1.hai();
-            myPlayer2.hai();
+            myPlayer1.printing();
+            myPlayer2.printing();
         }
 
         if(e.getSource()==historyButton) {

@@ -21,15 +21,16 @@ public class History extends JFrame {
         userHistory.setBounds(140,100,200,35);
         userHistory.setFont(new Font(null,Font.PLAIN,25));
 
+//        historyLabel.setBounds(1,1,250,10);
+//        historyLabel.setText("Helo");
 
-        //input & output
         try {
             File data = new File ("user.txt");
             Scanner dataScanner = new Scanner(data);
             int y = 1;
             while (dataScanner.hasNextLine()) {
                 String[] keyValue = dataScanner.nextLine().split(":");
-                historyLabel.setBounds(1,y,300,20);
+                historyLabel.setBounds(1,y,200,20);
                 historyLabel.setText(
                         "Username: " + keyValue[0] + " Password: " + keyValue[1]
                 );

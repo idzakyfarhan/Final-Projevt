@@ -5,10 +5,6 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-
-
-
-
 public class GamePanel extends JPanel implements Runnable,ConstantVab{
 
     Thread gameThread;

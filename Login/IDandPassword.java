@@ -1,5 +1,6 @@
 package Login;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class IDandPassword<T> {
@@ -20,10 +21,15 @@ public class IDandPassword<T> {
     HashMap<String,String> logininfo = new HashMap<String,String>(); //Collections using hashmap
 
     IDandPassword(){
+
+        ArrayList<String> iniuntukID = new ArrayList<String>();
+        iniuntukID.add("Budi"); //arraylist
+
         logininfo.put(nama[0],"312");
         logininfo.put("Jeje","213");
         logininfo.put("Eric","123");
         logininfo.put("kayla","ugly");
+        logininfo.put(iniuntukID.get(0),"111");
         logininfo.put(setName("Arya"),"123"); //encapsulation
 
 
